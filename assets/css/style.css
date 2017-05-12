@@ -1,0 +1,1358 @@
+/*
+color scheme
+
+dark grey: #3d454f;
+yellow: #ffcd00;
+turquois: #00c4cd;
+white: #fff;
+
+
+TABLE OF CONTENTS
+
+1. GLOBAL SETTINGS
+	1-1 TABLET STYLES 
+	1-2 MOBILE STYLES 
+	
+	1.1 BOX FOR HOME PAGE AND ACTIVITIES PAGE
+		1.1-1 Mobile Style for boxes
+
+2. NAVIGATION
+	2-1 TABLET and MOBILE STYLES
+
+	2.1 HOME NAVIGATION
+
+3. STICKY FOOTER AND SOCIAL MEDIAS
+	3.1 SOCIAL MEDIA FOOTER
+	3.2 HOME FOOTER
+
+4. HOME PAGE
+	4-1 TABLET AND MOBILE STYLES 
+	4-2 TABLET STYLES 
+	4-3 MOBILE STYLES 
+
+5. ACTIVITIES PAGE
+	5-1 TABLET STYLES 
+	5-2 MOBILE STYLES 
+
+	5.1 Image box and hover effect
+		5.1-1 TABLET AND MOBILE STYLES
+
+	5.2 Description
+		5.2-1 TABLET STYLES 
+		5.2-2 MOBILE STYLES 
+
+	5.3 Price table
+		5.3-1 MOBILE STYLES 
+
+6. FOOD AND DRINKS PAGE
+	6-1 MOBILE STYLES 
+
+7. SPECIALS PAGE
+	7-1 TABLET AND MOBILE STYLES 
+	7-2 TABLET STYLES 
+	7-3 MOBILE STYLES 
+
+8. RESERVATION PAGE
+	8-1 MOBILE STYLES 
+
+9. CONTACT PAGE
+	9-1 TABLET STYLES
+	9-2 MOBILE STYLES 
+
+	9.1 SIDE NAV
+		9.1-1 TABLET STYLES 
+		9.1-2 MOBILE STYLES 
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+/* -----------------------
+    1. GLOBAL SETTINGS
+-------------------------*/
+html, body{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+	color: #3d454f;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	color: #3d454f;
+}
+
+hr{
+	clear: right;
+	display: block;
+	border-top: 3px solid #ffcd00;
+	margin: 0;
+}
+
+h1{
+	font-size: 38pt;
+	text-transform: uppercase;
+	display: inline;
+	color: #00c4cd;
+	margin-bottom: 5px;
+}
+
+h2{
+	margin: 0px;
+	font-size: 26pt;
+}
+
+h3{
+	font-family: 'Amatic SC', cursive;
+	font-size: 34pt;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+li{
+	list-style-type: none;
+}
+
+img{
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+main{
+	background-color: #fff;
+	margin: 0 auto -157px auto;
+	min-height: 100vh;
+}
+
+.wrapper{
+	margin: 20px auto;
+	max-width: 850px;
+	padding: 0 30px;
+}
+
+.bold{
+	padding-left: 0;
+	color:#3d454f;
+}
+
+.home-body p, footer, .intro, .descriptions, .descriptions-right, .menu li p, .details, #passport p{
+	font-weight: 300;
+}
+
+#activities, #food, #deals, #annual, #monthly, #daily, #duo, #fno, #bowl, #br-img,#eg-img, #uk-img,#it-img,#jp-img,#usa-img{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.mascot{
+	position: fixed;
+	right: 60px;
+	bottom: 0;
+	z-index: 10;
+	display: none;
+}
+
+.quotes{
+	font-family: 'Satisfy', cursive;
+	font-size: 33pt;
+}
+	/* -----------------------------------
+		1-1 TABLET STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 501px) and (max-width: 1020px){
+		.mascot{
+			width: 250px;
+			right: 40px;
+		}
+	}
+
+	/* -----------------------------------
+		1-2 MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		h1{
+			font-size: 26pt;
+		}
+
+		h3{
+			font-size: 30pt;
+			margin: 20px 0;
+		}
+
+		.mascot{
+			width: 200px;
+			right: 33px;
+		}
+
+	}
+
+	/* --------------------------
+	1.1 Boxes for Home and Activities 
+	-----------------------------*/
+	.box{
+		display: -webkit-box;
+	  	display: -moz-box;
+	  	display: -ms-flexbox;
+	  	display: -webkit-flex;
+	  	display: flex;
+	    -webkit-flex-flow: row wrap;
+	  	justify-content: space-between;
+	  	margin: 0 auto;
+	  	max-width: 850px;
+	  	clear: left;
+	}
+
+	.box div{
+	    width: 220px;
+	    height: 180px;
+	    background-color: #3d454f;
+	    position: relative;
+	    margin: 0 5px;
+	}
+
+	.box div a, .spe-box div p {
+		background-color: #fff;
+		text-transform: uppercase;
+		position: absolute;
+		padding: 5px 20px;
+		top: 125px;
+		color: #3d454f;
+	}
+
+	.box div a:hover{
+		color: #ffcd00;
+	}
+
+		/* --------------------------
+		1.1-1 Mobile Style for boxes
+		-----------------------------*/
+		@media only screen and (min-width: 50px) and (max-width: 500px){
+			.box{
+				display: block;
+			}
+
+			.box div{
+				width: 260px;
+				height: 200px;
+				margin: 0 auto 60px auto;
+			}
+
+			.box div a, .spe-box div p{
+				top: 140px;
+			}
+		}
+
+/* -----------------------
+    2. NAVIGATION
+-------------------------*/
+header{
+	background-color: #ffcd00;
+	width: 100%;
+}
+
+.nav{
+	display: block;
+}
+
+.nav img{
+	position: absolute;
+	top: 10px;
+	left: 50px;
+}
+
+.nav ul {
+	padding: 106px 10px 15px 0;
+	margin:0;
+	text-align: right;
+}
+
+.nav ul li{
+	text-transform: uppercase;
+	display: inline;
+	padding: 0 10px;
+}
+
+img.nav-logo{
+	left:50%;
+	top: 15px;
+	transform: translateX(-50%);
+	position: absolute;
+	display: none;
+}
+
+@media screen and (min-width:1021px) {
+    .nav { 
+       	display:block !important;
+    }
+}
+	/*---------------------------
+	2-1 TABLET and MOBILE STYLES
+	-----------------------------*/
+	@media  only screen and (min-width: 50px) and (max-width: 1020px){
+	 	img.nav-logo{
+	 		display: block;
+	 	}
+
+	    .nav{
+	    	display: none;
+	    }
+
+	    .toggle-button {
+		    display: inline-block;
+		    cursor: pointer;
+		    margin: 75px 20px 10px 20px;
+
+		}
+
+		.bar1, .bar2, .bar3 {
+		    width: 36px;
+		    height: 5px;
+		    background-color: #333;
+		    margin: 6px 0;
+		    transition: 0.4s;
+		}
+
+		.change .bar1 {
+		    -webkit-transform: rotate(-45deg) translate(-8px, 7px) ;
+		    transform: rotate(-45deg) translate(-8px, 7px) ;
+		}
+
+		.change .bar2 {
+			opacity: 0;
+		}
+
+		.change .bar3 {
+		    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+		    transform: rotate(45deg) translate(-8px, -8px) ;
+		}
+
+		.nav img{
+			display: none;
+		}
+
+		.nav ul{
+			padding: 0;
+		}
+
+		.nav ul li{
+			padding: 10px 0 20px 0;
+			text-align: center;
+			display: block;
+		}
+	}
+
+	/* ------------
+	2.1 Home nav 
+	---------------*/
+	#home-nav{
+		background-color: #fff;
+	}
+
+	#home-nav .nav ul li a{
+		color: #3d454f;
+	}
+
+	#home-nav .nav ul li a:hover{
+		color: #ffcd00;
+	}
+
+	#home-line{
+		border-top: 3px solid #00c4cd;
+	}
+
+/* -----------------------
+    3. STICKY FOOTER AND SOCIAL MEDIAS
+-------------------------*/
+footer{
+	text-align: center;
+	background-color: #ffcd00;
+	width: 100%;
+	color: #fff;
+	padding: 40px 0;
+}
+
+footer, .push{
+	height: 157px;
+}
+
+.footer-line, .w-footer-line{
+	border-top: 1px solid #fff;
+	width: 67%;
+	margin: 0 auto 40px auto;
+}
+
+	/* --------------------
+	3.1 Social media icons footer
+	----------------------*/
+	.sm-icons{
+		margin-bottom:20px;
+	}
+
+	.icons{
+		width: 50px;
+		height: 50px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: inline-block;
+		margin:0 15px 20px 15px;
+	}
+
+	/* Free Social Media Icons made by Christophe Kerebel 
+	https://dribbble.com/shots/2247532-Freebies-Social-flat-icons-set */
+	#link-square1{
+		background-image: url('../media/fb-fill.png');
+	}
+
+	#link-square1:hover{
+		background-image: url('../media/fb-fill-h.png');
+	}
+
+	#link-square2{
+		background-image: url('../media/tw-fill.png');
+	}
+
+	#link-square2:hover{
+		background-image: url('../media/tw-fill-h.png');
+	}
+
+	#link-square3{
+		background-image: url('../media/ins-fill.png');
+	}
+
+	#link-square3:hover{
+		background-image: url('../media/ins-fill-h.png');
+	}
+
+	/* --------------------
+	3.2 Home white footer 
+	----------------------*/
+	.w-footer-line{
+		border-top: 1px solid #3d454f;
+	}
+
+	#w-link-square1{
+		background-image: url('../media/fb-outline.png');
+	}
+
+	#w-link-square1:hover{
+		background-image: url('../media/fb-outline-h.png');
+	}
+
+	#w-link-square2{
+		background-image: url('../media/tw-outline.png');
+	}
+
+	#w-link-square2:hover{
+		background-image: url('../media/tw-outline-h.png');
+	}
+
+	#w-link-square3{
+		background-image: url('../media/ins-outline.png');
+	}
+
+	#w-link-square3:hover{
+		background-image: url('../media/ins-outline-h.png');
+	}
+
+	.w-footer{
+		color: #3d454f;
+		background-color: #fff;
+	}
+
+/* -----------------------
+    4. HOME PAGE
+-------------------------*/
+h5{
+	font-family: 'Amatic SC', cursive;
+	font-size: 75pt;
+	margin: 90px 0 20px 0;
+	color:#3d454f;
+}
+
+.intro{
+	position: absolute;
+	left: 45%;
+	font-size: 20pt;
+	top: 300px;
+}
+
+.intro a {
+	background-color: #ffcd00;
+	padding: 5px 25px;
+	border-radius: 5px;
+}
+
+.intro a:hover {
+	background-color: #3d454f;
+	color: #fff;
+}
+
+#home-main{
+	background: #00c4cd url('../media/plane.png') no-repeat;
+	background-position: 0% 55%;
+	background-size: 30%;
+	min-height: initial;
+}
+
+#home-main .wrapper{
+	margin: 0 auto;
+}
+
+.banner{
+	width: 100%;
+	background-color: #fff;
+}
+
+.banner img{
+	max-height: 400px;
+}
+
+.home-body{
+	padding-top: 40px;
+}
+
+.home-body p{
+	padding: 10px 0;
+	color: #fff;
+	margin: 0 auto;
+	max-width: 850px;
+}
+
+#activities{
+	background-image: url('../media/activities.png');
+}
+
+#food{
+	background-image: url('../media/food.png');
+}
+
+#deals{
+	background-image: url('../media/packages.png');
+}
+
+.sub-text{
+	color: #fff;
+	text-align: center;
+}
+	
+	/* -----------------------------------
+	4-1 TABLET AND MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 1020px){
+		#activities{
+			background-image: url('../media/activities-mobile.png');
+		}
+
+		#food{
+			background-image: url('../media/food-mobile.png');
+		}
+
+		#deals{
+			background-image: url('../media/packages-mobile.png');
+		}
+	}
+
+	/* -----------------------------------
+	4-2 TABLET STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 501px) and (max-width: 1020px){
+		h5{
+			font-size: 53pt;
+			margin:24px 0 0 0;
+		}
+
+		.intro{
+			font-size: 17pt;
+			left: 52%;
+			padding: 0;
+		}
+	}
+	
+	/* -----------------------------------
+	4-3 MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		.banner{
+			margin-top: 20px;
+		}
+
+		.wrapper{
+			padding: 0 20px;
+		}
+
+		.home-body p{
+			line-height: 26px;
+		}
+
+		h5{
+			margin:10px 0;
+			font-size: 30pt;
+		}
+
+		.intro{
+			font-size: 12pt;
+			left: 52%;
+			padding: 0;
+		}
+
+		.intro p{
+			margin:0 0 15px 0;
+		}
+
+	}
+
+/* -----------------------
+    5. ACTIVITIES PAGE
+-------------------------*/
+#act-box{
+	margin:10px auto 50px auto;
+	max-width: 850px;
+}
+
+#act-box div{
+	font-family: 'Amatic SC', cursive;
+	font-size:25pt;
+	position: relative;
+}
+
+#act-box div p{
+	margin-left: 10px;
+	padding-top: 135px;
+	margin-bottom: -42px;
+	opacity: 1;
+	-webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+.to-top{
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	display: none;
+}
+	
+	/* -----------------------------------
+	5-1 TABLET STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 501px) and (max-width:1020px){
+		.to-top{
+			right: 10px;
+		}
+	}
+
+	/* -----------------------------------
+	5-2 MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		#act-box div p{
+			padding-top: 150px;
+		}
+
+		.to-top{
+			right: 10px;
+		}
+
+		.to-top img{
+			width: 30px;
+		}
+	}
+
+	/* --------------------
+	5.1 Image box and hover effect
+	----------------------*/
+	span{
+		font-family: 'Amatic SC', cursive;
+		color: #fff;
+	    cursor: pointer;
+	    float: right;
+	    margin-right: 10px;
+	    opacity: 0;
+	    -webkit-transition: opacity 500ms;
+	    -moz-transition: opacity 500ms;
+	    -o-transition: opacity 500ms;
+	    transition: opacity 500ms;
+	}
+
+	#act-box a:hover span{
+		opacity: 1;
+	}
+
+	#act-box a:hover div p{
+		opacity: 0;
+	}
+
+	#br-img{
+		background-image: url('../media/br.png');
+	}
+
+	#eg-img{
+		background-image: url('../media/eg.png');
+	}
+
+	#uk-img{
+		background-image: url('../media/uk.png');
+	}
+
+	#it-img{
+		background-image: url('../media/it.png');
+	}
+
+	#jp-img{
+		background-image: url('../media/jp.png');
+	}
+
+	#usa-img{
+		background-image: url('../media/usa.png');
+	}
+
+		/* -----------------------------------
+		5.1-1 TABLET AND MOBILE STYLES 
+		--------------------------------------*/
+		@media only screen and (min-width: 50px) and (max-width: 1020px){
+				
+			span{
+				opacity: 1;
+			}
+
+			#act-box a:hover div p{
+				opacity: 1;
+			}
+		}
+	/* --------------------
+	5.2 Description
+	----------------------*/
+	.images{
+		float: left;
+		background-color: #3d454f;
+	}
+
+	.images-right{
+		float: right;
+		background-color: #3d454f;
+	}
+
+	.descriptions{
+		width: 55%;
+		float: right;
+	}
+
+	.descriptions-right{
+		width: 50%;
+	}
+
+	.descriptions, .descriptions-right{
+		line-height: 25px;
+	}
+
+	#brazil, #egypt, #uk, #italy, #japan, #usa{
+		padding: 80px 0;
+	}
+
+	#brazil, #japan{
+		background-color: #00c4cd;
+	}
+
+	#egypt, #italy, #usa{
+		background-color: #fff;
+	}
+
+	#uk{
+		background-color: #ffcd00;
+	}
+		/* -----------------------------------
+		5.2-1 TABLET STYLES 
+		--------------------------------------*/
+		@media only screen and (min-width: 501px) and (max-width: 1020px){
+			.descriptions{
+				width: 51%;
+			}
+		}
+
+		/* -----------------------------------
+		5.2-2 MOBILE STYLES 
+		--------------------------------------*/
+		@media only screen and (min-width: 50px) and (max-width: 500px){
+			.images, .images-right{
+				float: none;
+				margin: 20px auto;
+				display: block;
+
+			}
+
+			.descriptions, .descriptions-right{
+				width: 100%;
+				float: none;
+			}
+
+			.descriptions h2, .descriptions-right h2{
+				text-align: center;
+			}
+
+			#brazil, #egypt, #uk, #italy, #japan, #usa{
+				padding: 15px 0;
+			}
+
+		}
+
+	/* --------------------
+	5.3 Price table
+	----------------------*/
+	.price{
+		padding-top: 20px;
+		clear: left;
+	}
+
+	.price-right{
+		clear: right;
+	}
+
+	.price-right h2{
+		padding-top: 30px;
+	}
+
+	table{
+		margin-top: 20px;
+		width: 100%;
+		border: 1px solid #3d454f;
+	}
+
+	th{
+		width: 50%;
+		padding: 8px;
+		border-bottom: 1px solid #3d454f;
+	}
+
+	th.last{
+		border-bottom: none;
+	}
+
+	th.right{
+		border-left: 1px solid #3d454f;
+	}
+
+		/* -----------------------------------
+		5.3-1 MOBILE STYLES 
+		--------------------------------------*/
+		@media only screen and (min-width: 50px) and (max-width: 500px){
+			.price , .price-right, .price-right h2{
+				padding-top: 0px;
+			}
+
+			.price h2, .price-right h2{
+				font-size: 20pt;
+			}
+		}
+
+/* -----------------------
+    6. FOOD AND DRINKS PAGE
+-------------------------*/
+.menu li {
+	font-weight: 700;
+	list-style-type: none;
+	margin-left: -20px;
+}
+
+.food-icons{
+	margin-left: 4px;
+}
+
+strong{
+	padding-left: 50px;
+	color: #ffcd00;
+}
+
+	/* -----------------------------------
+	6-1 MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		.menu li {
+			margin-left: -36px;
+		}
+	}
+
+/* -----------------------
+    7. SPECIALS PAGE
+-------------------------*/
+h6{
+	text-transform: uppercase;
+	margin: 10px 6px;
+	font-size: 16pt;
+}
+
+#passport h1{
+	display: block;
+}
+
+#passport img{
+	float: left;
+}
+
+#passport p{
+	float: left;
+	width: 60%;
+	margin: 0 30px;
+}
+
+#packages{
+	clear: left;
+}
+
+.spe-box div p{
+	background-color: #ffcd00;
+	color: #3d454f;
+	top:110px;
+}
+
+.spe-box div{
+	margin-bottom: 0;
+}
+
+section{
+	margin-bottom: 20px;
+}
+
+section ul{
+	padding-left: 8px;
+}
+
+.details{
+	font-size: 12pt;
+}
+
+#annual{
+	background-image: url('../media/an-pass.png');
+}
+
+#monthly{
+	background-image: url('../media/mon-pass.png');
+}
+
+#daily{
+	background-image: url('../media/day-pass.png');
+}
+
+#duo{
+	background-image: url('../media/duo.png');
+}
+
+#fno{
+	background-image: url('../media/friday.png');
+}
+
+#bowl{
+	background-image: url('../media/bowl.png');
+}
+	/* -----------------------------------
+	7-1 TABLET AND MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 1020px){
+		#annual{
+			background-image: url('../media/an-pass-mobile.png');
+		}
+
+		#monthly{
+			background-image: url('../media/mon-pass-mobile.png');
+		}
+
+		#daily{
+			background-image: url('../media/day-pass-mobile.png');
+		}
+	}
+
+	/* -----------------------------------
+	7-2 TABLET STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 501px) and (max-width: 1020px){
+		#passport p{
+			width: 55%;
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	/* -----------------------------------
+	7-3 MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		h6{
+			font-size: 14pt;
+			margin: 10px 40px;
+		}
+
+		section ul{
+			padding-left: 40px;
+		}
+
+		#passport img, #passport p{
+			float: none;
+			margin: 0 auto;
+			display: block;
+		}
+
+		#passport p{
+			width: 100%;
+			margin: 20px 0;
+		}
+
+		.spe-box div p{
+			top:125px;
+		}
+	}
+/* -----------------------
+    8. RESERVATION PAGE
+-------------------------*/
+#square div{
+	width: 15px;
+	height: 15px;
+	background-color: #00c4cd;
+	display: inline-block;
+}
+
+#square p{
+	display: inline-block;
+	margin-left: 5px;
+}
+.cld-main{
+  	width: 100%;
+}
+
+.cld-main a{
+  	color: #00c4cd;
+}
+
+.cld-main svg{
+  	fill: #fff;
+}
+
+.cld-datetime{
+    position: relative;
+    width: initial;
+    margin: auto;
+    overflow: hidden;
+    padding: 40px;
+    background-color: #00c4cd;
+}
+
+.cld-datetime .today{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    margin: auto;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 24pt;
+}
+
+.cld-nav{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.cld-nav:hover{
+    cursor: pointer;
+}
+
+.cld-nav:hover svg{
+    fill: #3d454f;
+}
+
+.cld-rwd{
+    float: left;
+}
+
+.cld-fwd{
+    float: right;
+}
+
+.cld-nav svg:hover{
+
+}
+
+.cld-labels, .cld-days{
+  	padding-left: 0;
+}
+ 
+.cld-label, .cld-day{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 14.28%;
+    text-align: center;
+}
+
+.cld-day{
+    border: 1px solid #eee;
+}
+
+.cld-day.today .cld-number{
+    background: #ffcd00;
+    color: #fff;
+}
+
+.cld-day.today .cld-number:hover{
+    background: #3d454f;
+}
+
+.cld-day.disableDay{
+    opacity: 0.5;
+}
+
+.cld-day.nextMonth, .cld-day.prevMonth{
+    opacity: 0.33;
+}
+
+.cld-number{
+    position: relative;
+    margin: 0;
+    padding: 30px 0;
+}
+
+.cld-title{
+	display: none;
+}
+
+.cld-number.eventday{
+    font-weight: bold;
+    color: #fff;
+    background-color: #00c4cd;
+}
+
+input#res_submit_button {
+    margin-left: 38.5%;
+    -webkit-appearance: none;
+}
+
+#headline{
+	color:#3d454f;
+	text-align: left;
+}
+
+	/* -----------------------------------
+	8-1 MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		.cld-number{
+			padding: 15px 0;
+			font-size: 10pt;
+		}
+
+		.cld-datetime .today{
+			font-size: 22pt;
+		}
+
+		input#res_submit_button {
+		    margin-left: 0;
+		}
+
+		#reservation h3{
+			font-size: 30pt;
+		}
+
+	}
+
+/* -----------------------
+    9. CONTACT PAGE
+-------------------------*/
+#contact-left{
+	max-width: 60%;
+}
+
+#contact-left h3{
+	color: #3d454f;
+	text-align: left;
+	margin: 20px 0 0 0;
+}
+
+#contact-left .links, .contact-sm-icons a:hover{
+	color: #00c4cd;
+}
+
+#contact-left .links:hover,{
+	color: #ffcd00;
+}
+
+.form{
+	margin-top: 20px;
+}
+
+#contact-form{
+	margin-top: 50px;
+}
+
+.form label{
+	text-transform: uppercase;
+	font-size: 16pt;
+	color: #00c4cd;
+}
+
+.form input, textarea{
+	margin: 4px 0 18px 0;
+	border: 1px solid #3d454f;
+	font-size: 12pt;
+	padding: 8px;
+	font-weight: 300;
+}
+
+.form #submit_button, #res_submit_button{
+	background-color: #ffcd00;
+	padding: 10px 33px;
+	border-radius: 5px;
+	border: none;
+	color:#fff;
+}
+
+.form #submit_button:hover, input#res_submit_button:hover{
+	color: white;
+	background-color: #3d454f;
+}
+
+.row{
+	display: inline-block;
+	margin: 0 28px 20px 0;
+}
+
+#name-box{
+	margin-right: 68px;
+}
+
+::-webkit-input-placeholder{
+	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+ 	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+}
+
+#submit_button{
+	-webkit-appearance: none;
+}
+	/* -----------------------------------
+	9-1 TABLET STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 501px) and (max-width: 1020px){
+		#contact-left{
+			max-width: 55%;
+		}
+		#message{
+			width: 370px;
+		}
+	}
+
+	/* -----------------------------------
+	9-2 MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		#contact-left{
+			max-width: 100%;
+		}
+		#message{
+			width: 260px;
+		}
+	}
+
+	/* --------------------
+	9.1 Side nav
+	----------------------*/
+	#store-info{
+		display: block;
+		float: right;
+		max-width: 35%;
+	}
+
+	#store-info h2{
+		margin-top: 10px;
+	    font-size: 20pt;
+	    text-transform: uppercase;
+	    color: #00c4cd;
+	}
+
+	#store-info ul{
+		padding-left: 0px;
+	}
+
+	.days{
+		padding: 10px 0;
+		font-weight: bold;
+	}
+
+	#map{
+		width: 290px;
+		height: 200px;
+		background-color: black;
+		margin: 20px 0;
+	}
+
+	.contact-sm-icons a{
+		color: #3d454f;
+	}
+
+
+	.contact-sm-icons img{
+		vertical-align: middle;
+		padding: 5px 10px 5px 0px;
+	}
+
+	/* -----------------------------------
+	9.1-1 TABLET STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 501px) and (max-width: 1020px){
+		#store-info{
+			max-width: 100%;
+		}
+	}
+
+	/* -----------------------------------
+	9.1-2 MOBILE STYLES 
+	--------------------------------------*/
+	@media only screen and (min-width: 50px) and (max-width: 500px){
+		#store-info{
+			float: none;
+			max-width: 100%;
+		}
+
+		#store-info h2{
+			border-bottom: 2px solid #00c4cd;
+			font-size: 16pt;
+		}
+	}
+
+
+
+
+
+
+
+
+
