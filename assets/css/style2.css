@@ -1,0 +1,140 @@
+/*
+color scheme
+
+dark grey: #3d454f;
+yellow: #ffcd00;
+turquois: #00c4cd;
+white: #fff;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+/* -----------------------
+    1. GLOBAL SETTINGS
+-------------------------*/
+html, body{
+	height: 100%;
+	margin: 0;
+	text-align: center;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+	color: #3d454f;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	color: #3d454f;
+}
+
+h1{
+	font-family: 'Satisfy', cursive;
+	font-size: 38pt;
+	color: #00c4cd;
+	margin-bottom: 5px;
+}
+
+li{
+	list-style-type: none;
+}
+
+
+header{
+	background-color: #474e54;
+	width: 100%;
+}
+
+.nav{
+	display: block;
+}
+
+.nav ul {
+	padding:70px 0 0 0;
+	margin:0;
+}
+
+.nav ul li{
+	text-transform: uppercase;
+	display: inline;
+	padding: 0 40px;
+}
+
+img.nav-logo{
+	left:50%;
+	top: 15px;
+	transform: translateX(-50%);
+	position: absolute;
+	display: none;
+}
+
+@media screen and (min-width:1021px) {
+    .nav { 
+       	display:block !important;
+    }
+}
+
+#banner{
+	width: 100%;
+}
+
+.intro{
+	position: absolute;
+	left: 45%;
+	font-size: 20pt;
+	top: 300px;
+	padding-right: 2%;
+}
+
+.quotes{
+	font-family: 'Satisfy', cursive;
+	font-size: 33pt;
+	color: white;
+}
+
+#chart{
+	display: block;
+	margin: 0 auto;
+}
+
+#left{
+	position: absolute;
+	right: 50%;
+	border-right: 1px solid black;
+	padding-right: 2%;
+}
+
+#left h4, #left p{
+	text-align: right;
+	margin: 0;
+}
+
+#right h4, #right p{
+	text-align: left;
+	margin: 0;
+}
+
+#left h4, #right h4{
+	text-transform: uppercase;
+	margin: 20px 0 3px 0;
+	font-weight: 900;
+}
+
+#right{
+	position: absolute;
+	left: 52%;
+}
+
+.bio-info{
+	padding-top: 200px;
+}
+
+#timeline{
+	padding:0;
+}

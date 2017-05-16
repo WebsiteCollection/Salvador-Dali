@@ -5,64 +5,6 @@ dark grey: #3d454f;
 yellow: #ffcd00;
 turquois: #00c4cd;
 white: #fff;
-
-
-TABLE OF CONTENTS
-
-1. GLOBAL SETTINGS
-	1-1 TABLET STYLES 
-	1-2 MOBILE STYLES 
-	
-	1.1 BOX FOR HOME PAGE AND ACTIVITIES PAGE
-		1.1-1 Mobile Style for boxes
-
-2. NAVIGATION
-	2-1 TABLET and MOBILE STYLES
-
-	2.1 HOME NAVIGATION
-
-3. STICKY FOOTER AND SOCIAL MEDIAS
-	3.1 SOCIAL MEDIA FOOTER
-	3.2 HOME FOOTER
-
-4. HOME PAGE
-	4-1 TABLET AND MOBILE STYLES 
-	4-2 TABLET STYLES 
-	4-3 MOBILE STYLES 
-
-5. ACTIVITIES PAGE
-	5-1 TABLET STYLES 
-	5-2 MOBILE STYLES 
-
-	5.1 Image box and hover effect
-		5.1-1 TABLET AND MOBILE STYLES
-
-	5.2 Description
-		5.2-1 TABLET STYLES 
-		5.2-2 MOBILE STYLES 
-
-	5.3 Price table
-		5.3-1 MOBILE STYLES 
-
-6. FOOD AND DRINKS PAGE
-	6-1 MOBILE STYLES 
-
-7. SPECIALS PAGE
-	7-1 TABLET AND MOBILE STYLES 
-	7-2 TABLET STYLES 
-	7-3 MOBILE STYLES 
-
-8. RESERVATION PAGE
-	8-1 MOBILE STYLES 
-
-9. CONTACT PAGE
-	9-1 TABLET STYLES
-	9-2 MOBILE STYLES 
-
-	9.1 SIDE NAV
-		9.1-1 TABLET STYLES 
-		9.1-2 MOBILE STYLES 
-
 */
 
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
@@ -91,19 +33,12 @@ a:hover{
 	color: #3d454f;
 }
 
-hr{
-	clear: right;
-	display: block;
-	border-top: 3px solid #ffcd00;
-	margin: 0;
-}
-
 h1{
+	font-family: 'Satisfy', cursive;
 	font-size: 38pt;
-	text-transform: uppercase;
-	display: inline;
 	color: #00c4cd;
 	margin-bottom: 5px;
+	text-align: center;
 }
 
 h2{
@@ -150,7 +85,7 @@ main{
 	color:#3d454f;
 }
 
-.home-body p, footer, .intro, .descriptions, .descriptions-right, .menu li p, .details, #passport p{
+.home-body p, .intro, .descriptions, .descriptions-right, .menu li p, .details, #passport p{
 	font-weight: 300;
 }
 
@@ -160,47 +95,12 @@ main{
 	background-size: cover;
 }
 
-.mascot{
-	position: fixed;
-	right: 60px;
-	bottom: 0;
-	z-index: 10;
-	display: none;
-}
 
 .quotes{
 	font-family: 'Satisfy', cursive;
 	font-size: 33pt;
 }
-	/* -----------------------------------
-		1-1 TABLET STYLES 
-	--------------------------------------*/
-	@media only screen and (min-width: 501px) and (max-width: 1020px){
-		.mascot{
-			width: 250px;
-			right: 40px;
-		}
-	}
 
-	/* -----------------------------------
-		1-2 MOBILE STYLES 
-	--------------------------------------*/
-	@media only screen and (min-width: 50px) and (max-width: 500px){
-		h1{
-			font-size: 26pt;
-		}
-
-		h3{
-			font-size: 30pt;
-			margin: 20px 0;
-		}
-
-		.mascot{
-			width: 200px;
-			right: 33px;
-		}
-
-	}
 
 	/* --------------------------
 	1.1 Boxes for Home and Activities 
@@ -262,7 +162,7 @@ main{
     2. NAVIGATION
 -------------------------*/
 header{
-	background-color: #ffcd00;
+	background-color: #d9d9d9;
 	width: 100%;
 }
 
@@ -357,124 +257,6 @@ img.nav-logo{
 		}
 	}
 
-	/* ------------
-	2.1 Home nav 
-	---------------*/
-	#home-nav{
-		background-color: #fff;
-	}
-
-	#home-nav .nav ul li a{
-		color: #3d454f;
-	}
-
-	#home-nav .nav ul li a:hover{
-		color: #ffcd00;
-	}
-
-	#home-line{
-		border-top: 3px solid #00c4cd;
-	}
-
-/* -----------------------
-    3. STICKY FOOTER AND SOCIAL MEDIAS
--------------------------*/
-footer{
-	text-align: center;
-	background-color: #ffcd00;
-	width: 100%;
-	color: #fff;
-	padding: 40px 0;
-}
-
-footer, .push{
-	height: 157px;
-}
-
-.footer-line, .w-footer-line{
-	border-top: 1px solid #fff;
-	width: 67%;
-	margin: 0 auto 40px auto;
-}
-
-	/* --------------------
-	3.1 Social media icons footer
-	----------------------*/
-	.sm-icons{
-		margin-bottom:20px;
-	}
-
-	.icons{
-		width: 50px;
-		height: 50px;
-		background-size: cover;
-		background-repeat: no-repeat;
-		display: inline-block;
-		margin:0 15px 20px 15px;
-	}
-
-	/* Free Social Media Icons made by Christophe Kerebel 
-	https://dribbble.com/shots/2247532-Freebies-Social-flat-icons-set */
-	#link-square1{
-		background-image: url('../media/fb-fill.png');
-	}
-
-	#link-square1:hover{
-		background-image: url('../media/fb-fill-h.png');
-	}
-
-	#link-square2{
-		background-image: url('../media/tw-fill.png');
-	}
-
-	#link-square2:hover{
-		background-image: url('../media/tw-fill-h.png');
-	}
-
-	#link-square3{
-		background-image: url('../media/ins-fill.png');
-	}
-
-	#link-square3:hover{
-		background-image: url('../media/ins-fill-h.png');
-	}
-
-	/* --------------------
-	3.2 Home white footer 
-	----------------------*/
-	.w-footer-line{
-		border-top: 1px solid #3d454f;
-	}
-
-	#w-link-square1{
-		background-image: url('../media/fb-outline.png');
-	}
-
-	#w-link-square1:hover{
-		background-image: url('../media/fb-outline-h.png');
-	}
-
-	#w-link-square2{
-		background-image: url('../media/tw-outline.png');
-	}
-
-	#w-link-square2:hover{
-		background-image: url('../media/tw-outline-h.png');
-	}
-
-	#w-link-square3{
-		background-image: url('../media/ins-outline.png');
-	}
-
-	#w-link-square3:hover{
-		background-image: url('../media/ins-outline-h.png');
-	}
-
-	.w-footer{
-		color: #3d454f;
-		background-color: #fff;
-	}
-
 /* -----------------------
     4. HOME PAGE
 -------------------------*/
@@ -503,17 +285,6 @@ h5{
 	color: #fff;
 }
 
-#home-main{
-	background: #00c4cd url('../media/plane.png') no-repeat;
-	background-position: 0% 55%;
-	background-size: 30%;
-	min-height: initial;
-}
-
-#home-main .wrapper{
-	margin: 0 auto;
-}
-
 .banner{
 	width: 100%;
 	background-color: #fff;
@@ -523,125 +294,10 @@ h5{
 	max-height: 400px;
 }
 
-.home-body{
-	padding-top: 40px;
-}
-
-.home-body p{
-	padding: 10px 0;
-	color: #fff;
-	margin: 0 auto;
-	max-width: 850px;
-}
-
-#activities{
-	background-image: url('../media/activities.png');
-}
-
-#food{
-	background-image: url('../media/food.png');
-}
-
-#deals{
-	background-image: url('../media/packages.png');
-}
-
-.sub-text{
-	color: #fff;
-	text-align: center;
-}
-	
-	/* -----------------------------------
-	4-1 TABLET AND MOBILE STYLES 
-	--------------------------------------*/
-	@media only screen and (min-width: 50px) and (max-width: 1020px){
-		#activities{
-			background-image: url('../media/activities-mobile.png');
-		}
-
-		#food{
-			background-image: url('../media/food-mobile.png');
-		}
-
-		#deals{
-			background-image: url('../media/packages-mobile.png');
-		}
-	}
-
-	/* -----------------------------------
-	4-2 TABLET STYLES 
-	--------------------------------------*/
-	@media only screen and (min-width: 501px) and (max-width: 1020px){
-		h5{
-			font-size: 53pt;
-			margin:24px 0 0 0;
-		}
-
-		.intro{
-			font-size: 17pt;
-			left: 52%;
-			padding: 0;
-		}
-	}
-	
-	/* -----------------------------------
-	4-3 MOBILE STYLES 
-	--------------------------------------*/
-	@media only screen and (min-width: 50px) and (max-width: 500px){
-		.banner{
-			margin-top: 20px;
-		}
-
-		.wrapper{
-			padding: 0 20px;
-		}
-
-		.home-body p{
-			line-height: 26px;
-		}
-
-		h5{
-			margin:10px 0;
-			font-size: 30pt;
-		}
-
-		.intro{
-			font-size: 12pt;
-			left: 52%;
-			padding: 0;
-		}
-
-		.intro p{
-			margin:0 0 15px 0;
-		}
-
-	}
 
 /* -----------------------
     5. ACTIVITIES PAGE
 -------------------------*/
-#act-box{
-	margin:10px auto 50px auto;
-	max-width: 850px;
-}
-
-#act-box div{
-	font-family: 'Amatic SC', cursive;
-	font-size:25pt;
-	position: relative;
-}
-
-#act-box div p{
-	margin-left: 10px;
-	padding-top: 135px;
-	margin-bottom: -42px;
-	opacity: 1;
-	-webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    transition: opacity 500ms;
-}
-
 .to-top{
 	position: fixed;
 	bottom: 30px;
