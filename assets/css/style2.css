@@ -17,13 +17,13 @@ blue black: #001421;
 html, body{
 	height: 100%;
 	margin: 0;
-	text-align: center;
+	font-weight: 300;
 }
 
 body{
 	font-family: 'Lato', sans-serif;
 	font-size: 13pt;
-	color: #001F3E;
+	color: #001421;
 }
 
 a{
@@ -40,7 +40,9 @@ h1{
 	font-size: 38pt;
 	color: #e5e5e5;
 	margin:0;
-	padding:40px 0;
+	padding:40px 0 20px 0;
+	text-align: center;
+	font-weight: 300;
 }
 
 li{
@@ -53,13 +55,24 @@ header{
 	width: 100%;
 }
 
+.content{
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+p{
+	line-height: 28px;
+}
+
 .nav{
 	display: block;
 }
 
 .nav ul {
-	padding:70px 0 0 0;
+	padding:50px 0 0 0;
 	margin:0;
+	text-align: center;
 }
 
 .nav ul li{
@@ -85,7 +98,7 @@ img.nav-logo{
 .circle{
 	position: fixed;
 	right: 20px;
-	top: 45%;
+	top: 40%;
 	z-index: 100;
 }
 
@@ -97,6 +110,7 @@ span{
     text-transform: uppercase;
     font-size: 10pt;
     display: none;
+    font-weight: 400;
 }
 
 
@@ -117,7 +131,6 @@ span{
 }
 
 #banner{
-	text-align: left;
 	background-color: #474e54;
 	color:#e5e5e5;
 }
@@ -131,7 +144,7 @@ span{
 	position: absolute;
 	left: 45%;
 	font-size: 20pt;
-	top: 25%;
+	top: 35%;
 	padding-right: 4%;
 	max-width: 700px;
 }
@@ -139,6 +152,8 @@ span{
 .quotes{
 	font-family: 'Satisfy', cursive;
 	font-size: 33pt;
+	margin: 10px 0;
+	font-weight: 300;
 }
 
 #chart{
@@ -158,6 +173,10 @@ h4{
 	padding-right: 2%;
 }
 
+#right{
+	position: absolute;
+	left: 52%;
+}
 
 #left h4, #left p{
 	text-align: right;
@@ -175,24 +194,21 @@ h4{
 	font-weight: 900;
 }
 
-#right{
-	position: absolute;
-	left: 52%;
+#left p, #right p{
+	font-weight: 400;
 }
 
 .bio-info{
 	padding-top: 200px;
 }
 
-#timeline{
-	padding:30px 0 0 0;
-	text-align: left;
+.timeline{
+	padding:40px 0 30px 0;
 	margin: 0 auto;
-	display: inline-block;
-	max-width: 800px;
+	font-weight: 400;
 }
 
-#timeline li{
+.timeline li{
 	padding:8px 0;
 }
 
@@ -214,4 +230,43 @@ h6{
 	padding-right: 50px;
 	font-style: italic;
 	letter-spacing: .5px;
+}
+
+.italicized{
+	font-style: italic;
+	font-weight: 300;
+}
+
+#sur-bg{
+	background-color: #001F3E;
+	color:#e5e5e5;
+}
+
+.works h1{
+	color: #001F3E;
+}
+
+.artworks{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 850px;
+	clear: left;
+}
+
+.artworks div{
+	width: 220px;
+	height: 180px;
+	background-color: #001F3E;
+	position: relative;
+	margin: 20px 0;
+}
+
+#cites{
+	background-image: url('../media/cat.jpg');
 }
