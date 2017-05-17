@@ -1,14 +1,15 @@
 /*
 color scheme
 
-dark grey: #3d454f;
-yellow: #ffcd00;
-turquois: #00c4cd;
-white: #fff;
+dark gray blue: #474e54;
+light gray: #e5e5e5;
+dark blue :#001F3E;
+blue black: #001421;
+
 */
 
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900');
 
 /* -----------------------
     1. GLOBAL SETTINGS
@@ -22,23 +23,24 @@ html, body{
 body{
 	font-family: 'Lato', sans-serif;
 	font-size: 13pt;
-	color: #3d454f;
+	color: #001F3E;
 }
 
 a{
 	text-decoration: none;
-	color: #fff;
+	color: #e5e5e5;
 }
 
 a:hover{
-	color: #3d454f;
+	color: #001421;
 }
 
 h1{
 	font-family: 'Satisfy', cursive;
 	font-size: 38pt;
-	color: #00c4cd;
-	margin-bottom: 5px;
+	color: #e5e5e5;
+	margin:0;
+	padding:40px 0;
 }
 
 li{
@@ -80,27 +82,73 @@ img.nav-logo{
     }
 }
 
+.circle{
+	position: fixed;
+	right: 20px;
+	top: 45%;
+	z-index: 100;
+}
+
+span{
+	margin-left: -90px;
+    text-align: right;
+    padding-right: 30px;
+    color: #001421;
+    text-transform: uppercase;
+    font-size: 10pt;
+    display: none;
+}
+
+
+.circle li{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background-color: #e5e5e5;
+	margin: 15px 0;
+}
+
+.circle li:hover span{
+	display: block;
+}
+
+.circle li:hover{
+	background-color: #001421;
+}
+
 #banner{
+	text-align: left;
+	background-color: #474e54;
+	color:#e5e5e5;
+}
+
+#dali-banner{
 	width: 100%;
+	max-width: 1200px;
 }
 
 .intro{
 	position: absolute;
 	left: 45%;
 	font-size: 20pt;
-	top: 300px;
-	padding-right: 2%;
+	top: 25%;
+	padding-right: 4%;
+	max-width: 700px;
 }
 
 .quotes{
 	font-family: 'Satisfy', cursive;
 	font-size: 33pt;
-	color: white;
 }
 
 #chart{
 	display: block;
 	margin: 0 auto;
+}
+
+h4{
+	color: #e5e5e5;
+	letter-spacing: 1px;
 }
 
 #left{
@@ -109,6 +157,7 @@ img.nav-logo{
 	border-right: 1px solid black;
 	padding-right: 2%;
 }
+
 
 #left h4, #left p{
 	text-align: right;
@@ -144,9 +193,25 @@ img.nav-logo{
 }
 
 #timeline li{
-	padding:5px 0;
+	padding:8px 0;
 }
 
 strong{
 	font-weight: bold;
+	padding:0;
+}
+
+.dali-bio{
+	background-image: url('../media/cat.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h6{
+	font-weight: 300;
+	font-size: 18pt;
+	text-align: right;
+	padding-right: 50px;
+	font-style: italic;
+	letter-spacing: .5px;
 }
