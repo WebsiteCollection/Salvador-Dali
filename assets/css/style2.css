@@ -65,6 +65,10 @@ p{
 	line-height: 28px;
 }
 
+.white-txt{
+	color: #e5e5e5;
+}
+/* Navigation */
 .nav{
 	display: block;
 }
@@ -217,6 +221,18 @@ strong{
 	padding:0;
 }
 
+.sub1, .sub2, .sub3, .sub4{
+	font-size: 12pt;
+}
+
+.sub1, .sub4{
+	margin-left: 50px;
+}
+
+.sub2, .sub3{
+	margin-left: 5px;
+}
+
 .dali-bio{
 	background-image: url('../media/cat.jpg');
 	background-size: cover;
@@ -230,6 +246,7 @@ h6{
 	padding-right: 50px;
 	font-style: italic;
 	letter-spacing: .5px;
+	margin: 0;
 }
 
 .italicized{
@@ -239,7 +256,6 @@ h6{
 
 #sur-bg{
 	background-color: #001F3E;
-	color:#e5e5e5;
 }
 
 .works h1{
@@ -269,4 +285,26 @@ h6{
 
 #cites{
 	background-image: url('../media/cat.jpg');
+}
+
+.art-info{
+	margin-top:100px;
+}
+
+h3{
+	font-family: 'Satisfy', cursive;
+	font-size: 33pt;
+	display: inline-block;
+	color: #001F3E;
+	margin: 20px 0 10px 0;
+}
+
+.art-size{
+	width: 800px;
+	height: 500px;
+	background-color: #474e54;
+}
+
+.year{
+	display: inline-block;
 }
