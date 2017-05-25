@@ -32,10 +32,6 @@ a{
 	z-index: 100;
 }
 
-a:hover{
-	border-bottom:solid 2px #e5e5e5;
-}
-
 h1{
 	font-family: 'Satisfy', cursive;
 	font-size: 38pt;
@@ -46,10 +42,19 @@ h1{
 	font-weight: 300;
 }
 
+h6{
+	font-weight: 300;
+	font-size: 18pt;
+	text-align: right;
+	padding-right: 50px;
+	font-style: italic;
+	letter-spacing: .5px;
+	margin: 0;
+}
+
 li{
 	list-style-type: none;
 }
-
 
 header{
 	background-color: #474e54;
@@ -73,7 +78,9 @@ p{
 .dali-bio, #cites{
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
 }
+
 /* Navigation */
 .nav{
 	display: block;
@@ -95,23 +102,28 @@ p{
 	padding: 2px 5px;
 }
 
+.nav ul li a:hover{
+	border-bottom:solid 2px #e5e5e5;
+}
+
 img.nav-logo{
-	left:50%;
+	left:55%;
 	top: 15px;
 	transform: translateX(-50%);
 	position: absolute;
 	display: none;
 }
 
-@media screen and (min-width:1021px) {
+@media screen and (min-width:1000px) {
     .nav { 
        	display:block !important;
     }
 }
 
+/* Side Navigation - Circles */
 .circle{
 	position: fixed;
-	right: 20px;
+	right: 10px;
 	top: 40%;
 	z-index: 100;
 }
@@ -126,7 +138,6 @@ span{
     display: none;
     font-weight: 400;
 }
-
 
 .circle li{
 	width: 15px;
@@ -144,9 +155,11 @@ span{
 	background-color: #001421;
 }
 
+/* Home */
 #banner{
 	background-color: #474e54;
 	color:#e5e5e5;
+	position: relative;
 }
 
 #dali-banner{
@@ -157,8 +170,7 @@ span{
 .intro{
 	position: absolute;
 	left: 45%;
-	font-size: 20pt;
-	top: 300px;
+	top: 230px;
 	padding-right: 4%;
 	max-width: 700px;
 }
@@ -175,7 +187,7 @@ span{
 	margin: 0 auto;
 }
 
-h4{
+h4{ /* Birth day stuff */
 	color: #e5e5e5;
 	letter-spacing: 1px;
 }
@@ -247,16 +259,7 @@ strong{
 	background-image: url('../media/cat.jpg');
 }
 
-h6{
-	font-weight: 300;
-	font-size: 18pt;
-	text-align: right;
-	padding-right: 50px;
-	font-style: italic;
-	letter-spacing: .5px;
-	margin: 0;
-}
-
+/* Surrealism */
 .italicized{
 	font-style: italic;
 	font-weight: 300;
@@ -266,6 +269,7 @@ h6{
 	background-color: #001F3E;
 }
 
+/* Works */
 .works h1{
 	color: #001F3E;
 }
@@ -291,10 +295,6 @@ h6{
 	margin: 20px 0;
 }
 
-#cites{
-	background-image: url('../media/paint.jpg');
-}
-
 .art-info{
 	margin-top:100px;
 }
@@ -315,4 +315,143 @@ h3{
 
 .year{
 	display: inline-block;
+}
+
+/* Citations */
+#cites{
+	background-image: url('../media/paint.jpg');
+}
+
+/* Tablet and Mobile */
+@media only screen and (min-width: 50px) and (max-width: 1000px){
+		/* General */
+		.content{
+			margin: 0 5%;
+		}
+
+		/* Nav */
+		img.nav-logo{
+	 		display: block;
+	 	}
+
+	    .nav{
+	    	display: none;
+	    }
+
+	    .toggle-button {
+		    display: inline-block;
+		    cursor: pointer;
+		    margin: 30px 20px 10px 20px;
+
+		}
+
+		.bar1, .bar2, .bar3 {
+		    width: 28px;
+		    height: 3px;
+		    background-color: #e5e5e5;
+		    margin: 6px 0;
+		    transition: 0.4s;
+		}
+
+		.change .bar1 {
+		    -webkit-transform: rotate(-45deg) translate(-7px, 5px) ;
+		    transform: rotate(-45deg) translate(-7px, 5px) ;
+		}
+
+		.change .bar2 {
+			opacity: 0;
+		}
+
+		.change .bar3 {
+		    -webkit-transform: rotate(45deg) translate(-8px, -6px) ;
+		    transform: rotate(45deg) translate(-8px, -6px) ;
+		}
+
+		.nav img{
+			display: none;
+		}
+
+		.nav ul{
+			padding: 0;
+		}
+
+		.nav ul li{
+			padding: 10px 0 20px 0;
+			text-align: center;
+			display: block;
+			color: white;
+		}
+
+		#home-btn{
+			display: none;
+		}
+
+		.circle{
+			display: none;
+		}
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 501px) and (max-width: 1000px){
+	.intro{
+		top: 120px;
+	}
+
+	.quotes{
+		font-size: 21pt;
+	}
+
+	h6{
+		font-size: 15pt;
+	}
+
+	.art-size{
+		width: 90%;
+		margin: 0 auto;
+		height: 400px;
+	}
+}
+
+
+/* Mobile  */
+@media only screen and (min-width: 50px) and (max-width: 500px){
+	body{
+		font-size: 12pt;
+	}
+
+	h1{
+		font-size: 25pt;
+		padding:20px 0;
+	}
+
+	.intro{
+		top: 25px;
+	}
+
+	.quotes{
+		font-size: 15pt;
+	}
+
+	h6{
+		font-size: 12pt;
+	}
+
+	.art-size{
+		width: 100%;
+		margin: 0 auto;
+		height: 220px;
+	}
+
+	.sub1, .sub2, .sub3, .sub4{
+		margin-left: -20px;
+	}
+
+	.artworks a{
+		margin: 0 auto;
+	}
+
+	h3{
+		font-size: 20pt;
+	}
 }
