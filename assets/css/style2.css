@@ -29,10 +29,11 @@ body{
 a{
 	text-decoration: none;
 	color: #e5e5e5;
+	z-index: 100;
 }
 
 a:hover{
-	color: #001421;
+	border-bottom:solid 2px #e5e5e5;
 }
 
 h1{
@@ -79,7 +80,7 @@ p{
 }
 
 .nav ul {
-	padding:50px 0 0 0;
+	padding:50px 0 10px 0;
 	margin:0;
 	text-align: center;
 }
@@ -87,7 +88,11 @@ p{
 .nav ul li{
 	text-transform: uppercase;
 	display: inline;
-	padding: 0 40px;
+	margin: 0 35px;
+}
+
+.nav ul li a{
+	padding: 2px 5px;
 }
 
 img.nav-logo{
@@ -115,7 +120,7 @@ span{
 	margin-left: -90px;
     text-align: right;
     padding-right: 30px;
-    color: #001421;
+    color: #e5e5e5;
     text-transform: uppercase;
     font-size: 10pt;
     display: none;
