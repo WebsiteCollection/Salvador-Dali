@@ -5,6 +5,7 @@ dark gray blue: #474e54;
 light gray: #e5e5e5;
 dark blue :#001F3E;
 blue black: #001421;
+darker gray :#b5b5b5;
 
 */
 
@@ -132,7 +133,7 @@ span{
 	margin-left: -90px;
     text-align: right;
     padding-right: 30px;
-    color: #e5e5e5;
+    color: #b5b5b5;
     text-transform: uppercase;
     font-size: 10pt;
     display: none;
@@ -143,7 +144,7 @@ span{
 	width: 15px;
 	height: 15px;
 	border-radius: 100%;
-	background-color: #e5e5e5;
+	background-color: #ccc;
 	margin: 15px 0;
 }
 
@@ -269,6 +270,13 @@ strong{
 	background-color: #001F3E;
 }
 
+#sur-bg .quotes{
+	font-size: 24pt;
+}
+
+#impact h2{
+	text-transform: uppercase;
+}
 /* Works */
 .works h1{
 	color: #001F3E;
@@ -296,7 +304,7 @@ strong{
 }
 
 .art-info{
-	margin-top:100px;
+	margin-top:60px;
 }
 
 h3{
@@ -304,7 +312,7 @@ h3{
 	font-size: 33pt;
 	display: inline-block;
 	color: #001F3E;
-	margin: 20px 0 10px 0;
+	margin: 20px 0 0 0;
 }
 
 .art-size{
@@ -317,6 +325,9 @@ h3{
 	display: inline-block;
 }
 
+#info1 p, #info2 p, #info3 p, #info4 p, #info5 p, #info6 p{
+	margin: 0 0 30px 0;
+}
 /* Citations */
 #cites{
 	background-image: url('../media/paint.jpg');
