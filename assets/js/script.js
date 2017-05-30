@@ -10,6 +10,44 @@ $(document).ready(function() {
       this.classList.toggle('change');//changing nav style: from hamburger to x
   });
 
+
+  // ----------- CIRCLE CLICK --------------//
+
+  $('#ho').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#home-nav').position().top}, 400);
+            return false;
+          }
+        );
+
+  $('#bi').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('.dali-bio').position().top}, 400);
+            return false;
+          }
+        );
+
+  $('#su').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#sur-bg').position().top}, 400);
+            return false;
+          }
+        );
+
+  $('#wo').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('.works').position().top}, 400);
+            return false;
+          }
+        );
+
+  $('#ci').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#cites').position().top}, 400);
+            return false;
+          }
+        );
+
   // ----------- ACTIVITIES CLICK ------------ //
 
   $('#one-box').click(
@@ -74,18 +112,6 @@ $(document).ready(function() {
         $('html,body').animate({ scrollTop: 0 }, 500);
         return false;
       }); 
-
-  var mascot = $('.mascot');
-
-      //Show to-top button when html reaches 450
-      $(window).scroll(function(){
-        if ($(this).scrollTop() > 650){
-          mascot.fadeIn();
-        }
-        else {       
-          mascot.fadeOut();
-        }
-      });
 
 });
 
