@@ -476,9 +476,22 @@ h3{
 
 	h3{
 		font-size: 20pt;
+		margin-bottom: 10px;
 	}
 
 	#right{
-			margin-right: 5%;
-		}
+		margin-right: 5%;
+	}
+
+	.timeline{
+		padding: 60px 0 30px 0;
+	}
+
+	#sur-bg .quotes{
+		font-size: 18pt;
+	}
+
+	.content{
+		padding-bottom: 15px;
+	}
 }
