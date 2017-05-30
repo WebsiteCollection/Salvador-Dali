@@ -12,44 +12,44 @@ $(document).ready(function() {
 
   // ----------- ACTIVITIES CLICK ------------ //
 
-  $('#br-box').click(
+  $('#one-box').click(
           function (e) {
-            $('html, body').animate({scrollTop: $('#brazil').position().top}, 200);
+            $('html, body').animate({scrollTop: $('#info1').position().top}, 200);
             return false;
           }
         );
 
-  $('#eg-box').click(
+  $('#two-box').click(
           function (e) {
-            $('html, body').animate({scrollTop: $('#egypt').position().top}, 300);
+            $('html, body').animate({scrollTop: $('#info2').position().top}, 300);
             return false;
           }
         );
 
-  $('#uk-box').click(
+  $('#three-box').click(
           function (e) {
-            $('html, body').animate({scrollTop: $('#uk').position().top}, 400);
+            $('html, body').animate({scrollTop: $('#info3').position().top}, 400);
             return false;
           }
         );
 
-  $('#it-box').click(
+  $('#four-box').click(
           function (e) {
-            $('html, body').animate({scrollTop: $('#italy').position().top}, 500);
+            $('html, body').animate({scrollTop: $('#info4').position().top}, 500);
             return false;
           }
         );
 
-  $('#jp-box').click(
+  $('#five-box').click(
           function (e) {
-            $('html, body').animate({scrollTop: $('#japan').position().top}, 600);
+            $('html, body').animate({scrollTop: $('#info5').position().top}, 600);
             return false;
           }
         );
 
-  $('#usa-box').click(
+  $('#six-box').click(
           function (e) {
-            $('html, body').animate({scrollTop: $('#usa').position().top}, 700);
+            $('html, body').animate({scrollTop: $('#info6').position().top}, 700);
             return false;
           }
         );
