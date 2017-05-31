@@ -10,6 +10,35 @@ $(document).ready(function() {
       this.classList.toggle('change');//changing nav style: from hamburger to x
   });
 
+  // ----------- CIRCLE CLICK --------------//
+
+  $('#top-bio').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('.dali-bio').position().top}, 300);
+            return false;
+          }
+        );
+
+  $('#top-sur').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#sur-bg').position().top}, 400);
+            return false;
+          }
+        );
+
+  $('#top-works').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('.works').position().top}, 500);
+            return false;
+          }
+        );
+
+  $('#top-cite').click(
+          function (e) {
+            $('html, body').animate({scrollTop: $('#cites').position().top}, 600);
+            return false;
+          }
+        );
 
   // ----------- CIRCLE CLICK --------------//
 

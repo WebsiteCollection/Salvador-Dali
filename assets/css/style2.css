@@ -329,12 +329,6 @@ h3{
 	margin: 20px 0 0 0;
 }
 
-.art-size{
-	width: 800px;
-	height: 500px;
-	background-color: #474e54;
-}
-
 .year{
 	display: inline-block;
 }
@@ -350,6 +344,7 @@ h3{
     padding: 79px 0;
     margin: 0;
     display: none;
+    color: white;
 }
 
 .img-links:hover .img-info{
@@ -357,7 +352,7 @@ h3{
 }
 
 
-#me-img, #rose-img{
+#me-img, #rose-img, #gr-img, #swan-img, #burn-img, #ga-img{
 	background-size: cover;
 	background-position: center;
 }
@@ -368,6 +363,18 @@ h3{
 
 #me-img{
 	background-image: url(../media/memory.jpg);
+}
+
+#gr-img{
+	background-image: url(../media/great.jpg);
+}
+
+#swan-img{
+	background-image: url(../media/swan.jpg);
+}
+
+#burn-img{
+	background-image: url(../media/burn.jpg);
 }
 
 /* Citations */
@@ -426,6 +433,7 @@ h3{
 
 		.nav ul{
 			padding: 0;
+			background-color: rgba(0,0,0,0.2);
 		}
 
 		.nav ul li{
@@ -434,7 +442,7 @@ h3{
 			display: block;
 			color: white;
 		}
-
+		
 		#home-btn{
 			display: none;
 		}
