@@ -306,6 +306,7 @@ strong{
 	margin: 0 auto;
 	max-width: 850px;
 	clear: left;
+	margin-bottom: 100px;
 }
 
 .artworks div{
@@ -355,10 +356,18 @@ h3{
 	display: block;
 }
 
-#rose-img{
-	background-image: url(../media/rose.jpg);
+
+#me-img, #rose-img{
 	background-size: cover;
 	background-position: center;
+}
+
+#rose-img{
+	background-image: url(../media/rose.jpg);
+}
+
+#me-img{
+	background-image: url(../media/memory.jpg);
 }
 
 /* Citations */
@@ -432,6 +441,10 @@ h3{
 
 		.circle{
 			display: none;
+		}
+
+		.artworks{
+			margin-bottom: 40px;
 		}
 }
 
