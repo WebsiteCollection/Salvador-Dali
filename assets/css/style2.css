@@ -289,6 +289,7 @@ strong{
 #impact h2{
 	text-transform: uppercase;
 }
+
 /* Works */
 .works h1{
 	color: #001F3E;
@@ -340,6 +341,26 @@ h3{
 #info1 p, #info2 p, #info3 p, #info4 p, #info5 p, #info6 p{
 	margin: 0 0 30px 0;
 }
+
+.img-info{
+    text-align: center;
+    font-size: 14pt;
+    background-color: rgba(0,0,0, 0.35);
+    padding: 79px 0;
+    margin: 0;
+    display: none;
+}
+
+.img-links:hover .img-info{
+	display: block;
+}
+
+#rose-img{
+	background-image: url(../media/rose.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
 /* Citations */
 #cites{
 	background-image: url('../media/paint.jpg');
