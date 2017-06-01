@@ -377,6 +377,10 @@ h3{
 	background-image: url(../media/burn.jpg);
 }
 
+#ga-img{
+	background-image: url(../media/gala.jpg);
+}
+
 /* Citations */
 #cites{
 	background-image: url('../media/paint.jpg');
@@ -453,6 +457,10 @@ h3{
 
 		.artworks{
 			margin-bottom: 40px;
+		}
+
+		h6{
+			padding-right: 0;
 		}
 }
 
